@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MyTradingSystem.DataBase.CDBAccess" Collapsed="true">
+    <Position X="9.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataBase\CDBAccess.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataBase.CDBTxt" Collapsed="true">
+    <Position X="13.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAAIAAAAAAJAAgAAIAAAAAAgAAAgAAAAAAAAAAAAQ=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataBase\CDBTxt.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataBase.CDBSQLManipulate_StockPrice" Collapsed="true">
+    <Position X="11.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAggAAAAAAAAAAAAAAAAIAAAAAACAAggAAAAA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataBase\CDBSQLManipulate_Obsolete.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataBase.CDBSQLManipulate_StockList" Collapsed="true">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAACAACAAAAAAAAAAAAAQAgAAACAAAAAAgAAgAA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataBase\CDBSQLManipulate_Obsolete.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataBase.CDBSQLManipulate_IndexList" Collapsed="true">
+    <Position X="13.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataBase\CDBSQLManipulate_Obsolete.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataBase.CDBADOCommand">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAgAAAAABEAAAAAAAAEAAAAAAAAABBAgAEA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataBase\CDBADO\CDBADOCommand.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataBase.CDBADOConnection">
+    <Position X="3.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAQAAAAAAACAAACAAAA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataBase\CDBADO\CDBADOConnection.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataBase.CDBADODataReader" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataBase\CDBADO\CDBADODataReader.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataBase.CDBADODataRelation" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataBase\CDBADO\CDBADODataRelation.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataBase.CDBADODataTable" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAABAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataBase\CDBADO\CDBADODataTable.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataBase.CDBDataBindingControl" Collapsed="true">
+    <Position X="11.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEQAAAAAAAEIAAAAAEIAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataBase\CDBDataBindingControl.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="宋体" Size="8.83" />
+</ClassDiagram>

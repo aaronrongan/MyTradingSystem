@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MyTradingSystem.Indicator.CIndicatorPlotAxTchart" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\30_Indicator\CIndicator.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.Indicator.CIndicatorPlotAxTchart_SMA" Collapsed="true">
+    <Position X="2.25" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\30_Indicator\CIndicator_SMA.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.Indicator.CIndicator_SMA" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAEACAAAgRAAAACAEAAgAAAACEAAACAI=</HashCode>
+      <FileName>ClassLibrary\30_Indicator\CIndicator_SMA.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.Indicator.CIndicator_MA_2" Collapsed="true">
+    <Position X="7" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAABAAAAgAAAAAAAAAAACAA=</HashCode>
+      <FileName>ClassLibrary\30_Indicator\CIndicator_SMA2.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.Indicator.CIndicator_SMA3" Collapsed="true">
+    <Position X="8.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAgBAAAAgAAAAAAAAAAACAA=</HashCode>
+      <FileName>ClassLibrary\30_Indicator\CIndicator_SMA3.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.Indicator.CIndicator_MACD" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\30_Indicator\CIndicator_MACD.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.CTeeChartManaged">
+    <Position X="0.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAASAAQBAAAAAAAIAEAAQAAAAAAAAhAAAAAA=</HashCode>
+      <FileName>ClassLibrary\40_Graph\CTeeChartManaged.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CIndicatorSets" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MyTradingSystem.Indicator.CIndicatorSets" Collapsed="true">
+    <Position X="3" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIAAAAAAAAEABAQCAAABAQEAAACAgAAAAAgAABQIAA=</HashCode>
+      <FileName>ClassLibrary\30_Indicator\CIndicatorSets.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="MyTradingSystem.Indicator.IIndicatorPlot" Collapsed="true">
+    <Position X="5" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\30_Indicator\CIndicator.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MyTradingSystem.Indicator.IIndicatorPlotAxTchart">
+    <Position X="5" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\30_Indicator\CIndicator.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MyTradingSystem.Indicator.IIndicator" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAkAQAAQEEAAAAAAgAAAAAAAAAAAAAAAAANAAAEICA=</HashCode>
+      <FileName>ClassLibrary\30_Indicator\CIndicator.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="MyTradingSystem.Indicator.EIndicatorName" Collapsed="true">
+    <Position X="12.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ADAAAAAAAAAAAAAAAQAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\30_Indicator\CIndicator.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MyTradingSystem.Indicator.EPriceType" Collapsed="true">
+    <Position X="12.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAgAAAAAAAAgAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>ClassLibrary\30_Indicator\CIndicator.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MyTradingSystem.Indicator.ERetCode" Collapsed="true">
+    <Position X="12.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAIACAAAAggBIAAAgAAAABoQAAAAgAAACAAjAQAI=</HashCode>
+      <FileName>ClassLibrary\30_Indicator\CIndicator.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MyTradingSystem.Indicator.EMAType" Collapsed="true">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgEgAAAEAAAAAAAAAQAAAAAAAAAAAAAABIAEEAAA=</HashCode>
+      <FileName>ClassLibrary\30_Indicator\CIndicator_SMA.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="宋体" Size="8.83" />
+</ClassDiagram>

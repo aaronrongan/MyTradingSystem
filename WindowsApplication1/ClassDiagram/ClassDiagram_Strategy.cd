@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MyTradingSystem.Strategy.CStrategy" Collapsed="true">
+    <Position X="3.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAEAAAEAAAIAAAAAAAAAAAAI=</HashCode>
+      <FileName>ClassLibrary\50_Strategy\CStrategy.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="MyTradingSystem.Strategy.EStrategyMode" Collapsed="true">
+    <Position X="6.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAIAAAAIAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\50_Strategy\CStrategy.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="宋体" Size="8.83" />
+</ClassDiagram>

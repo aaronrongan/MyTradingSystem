@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MyTradingSystem.DataFeed.CDataFeedMatlabFaruto">
+    <Position X="9" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAEAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataFeed\CDataFeedMatlabFaruto.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataFeed.CDataFeedBASE">
+    <Position X="4.5" Y="2.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="MyTradingSystem.DataFeed.CDataFeedBASE.DataFeedType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ClassLibrary\DataFeedBaseExport\DataFeed\CDataFeedBASE.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataFeed\CDataFeedBASE.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataFeed.CDataFeedDatayes">
+    <Position X="7" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAEAAAAAEAAAAAAAQAAAIAAAAAAAAAgYIQAAA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataFeed\DataFeedDatayes\CDataFeedDatayes.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataFeed.CDataFeedTDX">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <NestedTypes>
+      <Struct Name="MyTradingSystem.DataFeed.CDataFeedTDX.PriceStructure" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ClassLibrary\DataFeedBaseExport\DataFeed\CDataFeedTDX.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AIQgAAAAAAIAAACBQAAAAAAAAAAAAIBACAAIEAAAAAI=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataFeed\CDataFeedTDX.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataFeed.CDataFeedWeb">
+    <Position X="0.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAQQEIAABDBBxFAACBIABIQgYQAEDAAAFCgAEAAAAA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataFeed\DataFeedWeb\CDataFeedWeb.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataFeed.CDataFeedWind">
+    <Position X="2.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAEAAAACAACAhAAQQAgAgAEAAABgSAIAEAAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataFeed\CDataFeedWind.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataFeed.CDataFeedDatayes_General">
+    <Position X="5.5" Y="7.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAABAKAAAYAAEAAAAIAABAAAAAABAA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataFeed\DataFeedDatayes\CDataFeedDatayes_General.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataFeed.CDataFeedDatayes_BundInfo">
+    <Position X="5.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataFeed\DataFeedDatayes\CDataFeedDatayes_BundInfo.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataFeed.CDataFeedDatayes_Fundamental" Collapsed="true">
+    <Position X="9.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataFeed\DataFeedDatayes\CDataFeedDatayes_Fundamental.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataFeed.CDataFeedDatayes_FundInfo" Collapsed="true">
+    <Position X="9.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataFeed\DataFeedDatayes\CDataFeedDatayes_FundInfo.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataFeed.CDataFeedDatayes_FuntureInfo" Collapsed="true">
+    <Position X="6.5" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataFeed\DataFeedDatayes\CDataFeedDatayes_FutureInfo.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataFeed.CDataFeedDatayes_IndexInfo" Collapsed="true">
+    <Position X="10" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAgA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataFeed\DataFeedDatayes\CDataFeedDatayes_IndexInfo.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataFeed.CDataFeedDatayes_Macro" Collapsed="true">
+    <Position X="7.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataFeed\DataFeedDatayes\CDataFeedDatayes_Macro.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataFeed.CDataFeedDatayes_Price" Collapsed="true">
+    <Position X="8.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAIAAAEAAAAAAAAAAABAAAAAAAACBA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataFeed\DataFeedDatayes\CDataFeedDatayes_Price.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTradingSystem.DataFeed.CDataFeedDatayes_StockInfo" Collapsed="true">
+    <Position X="8.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassLibrary\DataFeedBaseExport\DataFeed\DataFeedDatayes\CDataFeedDatayes_StockInfo.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="宋体" Size="8.83" />
+</ClassDiagram>

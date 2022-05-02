@@ -1,0 +1,888 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>https://uqer.io/help/faq/#Notebook%E6%98%AF%E5%B9%B2%E4%BB%80%E4%B9%88%E7%9A%84
+
+    在这里，我们希望能够解答您在使用『优矿』中『开始研究』页面下的大部分问题，更详细的编程帮助文档请参考 《深入浅出量化实验室》。
+
+    如果这些都不能解答您的问题，您可以将问题发布到社区，或者直接邮件联系我们 service.uqer@datayes.com 。
+
+    什么是『优矿』
+
+    『优矿』是您的私人金融量化分析的平台。我们旨在打破金融量化的壁垒，为广大量化爱好者提供华尔街专业量化机构的装备。通过提供高质量的海量金融数据与高性能的分析工具，共襄智慧与金融在大数据时代的红利。
+
+    社区 ：我们聚集了一批量化从业者、量化爱好者，他们开放各种想法、算法、策略，共享思维碰撞带来的灵感；
+    开始研究 ：我们为每个用户提供了独立安全的研究开发环境，您在『开始研究』中的所有内容都是您私有的；
+    同时您还可以将研究成果、或者问题一键分享至『社区』，让更多的人发现你，并在讨论中获得提升。
+    甚至您还可以将感兴趣的『社区』内容，一键克隆至您个人的研究开发环境『开始研究』。
+    模拟交易 ：您可以将开始研究中的策略，一键发布，进行实盘模拟。
+
+    在 开始研究 中，您可以通过编写python 2.7代码，快速实现各种金融数据分析、量化策略研究、定价模型分析。我们提供了：
+
+    海量金融大数据
+    提供包括市场行情、财报、宏观、基于文本分析的股票关联数据等，通过简单的DataAPI便可获取（所有提供的数据请见 DataAPI帮助）；
+    交易回测框架
+    我们提供了quartz交易回测框架，使得用户可以专注于描述交易算法逻辑，而不必关心底层的实现细节，同时快速获得策略表现评估。
+    金融计算分析库
+    我们提供了CAL——金融计算分析库，涵盖金融计算的方方面面，包括定价、风险指标分析、数值计算等等。CAL让金融分析高度模块化，方便专业金融人士在此基础之上设计自己的模型。
+
+    知识产权与安全
+
+    您在优矿的所有研究策略，包括社区分享的所有原创内容、在开始研究中的所有策略研究、在我的交易中的所有策略以及所有参加大赛的策略，其知识产权100%均归您本人所有。
+
+    尊重用户隐私数据是优矿的一贯原则，优矿会竭尽全力通过各种技术手段、强化内部管理等办法保障您的隐私数据的安全。
+
+    Https加密通道：全程保障您在优矿使用期间的数据传输安全。
+
+    用户数据加密：您的隐私数据以加密方式存储，让您的研究和交易环境只属于您一个人。
+
+    独立隔离的研究环境：优矿为每个用户分配安全独立的虚拟机，虚拟机之间完全隔离，确保您的隐私研究和交易环境环境不受其他用户的侵扰。
+
+    安全运行机制：优矿从python运行机制入手，在研究和交易环境限制用户使用底层系统方法，同时采用恶意代码过滤机制，从根源上遏制了外部用户的入侵。
+
+    定期安全检测：优矿定期展开安全测评，以确保您使用的研究和交易环境安全稳定。
+
+    数据灾备与恢复：优矿采用的云灾难备份与快速恢复方案，有效保障了您的研究策略数据不丢失。
+
+    Notebook是干什么的
+
+    在『优矿』中的所有金融研究都可在Notebook中实现，Notebook文件采用输入与输出混排的交互方式，让您的研究过程所见即所得。
+
+    您可以在『开始研究』中新建Notebook，新建的Notebook默认为以下界面：
+
+    New Notebook
+
+    我们将其称之为单元，每个Notebook都可以由多个这样的单元组成。
+
+    当您的鼠标移动到单元的上边界上方、或下边界下方时，您将会看到添加单元的按钮。
+
+    您还可以在该单元的左上方，将单元都切换为不同的模式：
+
+    Change Type
+
+    Strategy 模式：您可以用程序化的方法，定义每个交易日在某种条件下买入卖出一定数量的股票，并进行策略表现评估；
+    Code 模式：您可以在这个模式下进行各种数据的研究分析、金融建模、定价分析等；
+    Markdown 模式：您可以在这个模式下编写Markdown格式的文档。
+
+    在不同的单元模式间切换，您将在Notebook中实现各种丰富的研究。
+
+    Notebook中支持了丰富的函数库，包括：
+
+    『优矿』内置： CAL, DataAPI，quartz，本平台已经将DataAPI，quartz这两个函数库内置，您无需额外import即可使用；
+    python其他库： array, cmath, collections, copy, datetime, dateutil, functools, heapq, itertools, json, math, operator, random, re, string, time, xml,__future__,numpy,pandas, scipy, matplotlib, mpl_toolkits, statsmodels, datetime, talib,time, sklearn, seaborn, statsmodels, cvxopt, MLPlatformClient, jieba, pymc, pybrain, tables, gensim, fractions, sets, arch,xlrd,xlwt,io,pickle, cPickle, StringIO,networkx, sympy, pywt
+
+    如何写个策略
+
+    『开始研究』页面的 notebook当中，可以将每个单元切换为 Strategy 模式。 Strategy模式中，支持各种类型的日间股票量化投资策略的编写，并有着交易策略的定制化输出。
+
+    未来我们会提供股票日内、期货日间、期货日内等策略。
+    策略结构
+
+    您将Notebook中的单元切换为 Strategty 模式后，会显示如下策略代码模板：
+
+    start = '2014-01-01'                       # 回测起始时间
+    end = '2015-01-01'                         # 回测结束时间
+    benchmark = 'HS300'                        # 策略参考标准
+    universe = ['000001.XSHE', '600000.XSHG']  # 证券池，支持股票和基金
+    capital_base = 100000                      # 起始资金
+    freq = 'd'                                 # 策略类型，'d'表示日间策略使用日线回测，'m'表示日内策略使用分钟线回测
+    refresh_rate = 1                           # 调仓频率，表示执行handle_data的时间间隔，若freq = 'd'时间间隔的单位为交易日，若freq = 'm'时间间隔为分钟
+
+    def initialize(account):                   # 初始化虚拟账户状态
+    pass
+
+    def handle_data(account):                  # 每个交易日的买入卖出指令
+    return
+
+    该策略代码由两部组成：
+    全局变量参数
+
+    您可以在策略中设置如下全局变量参数：
+
+    start
+
+    回测起始时间。支持多种格式，包括：'20150101', '2015-01-01', datetime(2015,1,1)
+
+    end
+
+    回测结束时间。支持多种格式，包括：'20150101', '2015-01-01', datetime(2015,1,1)
+
+    benchmark 策略基准，默认值为'HS300'。benchmark支持三种赋值方式：
+    指数名称，包括 上证综指'SHCI'、上证50'SH50'、上证180 'SH180'、沪深300'HS300'、中证500'ZZ500'
+    指数secID，例如用创业板指当做基准 benchmark = '399006.ZICN'
+    个股secID，例如 benchmark = '000001.XSHE'
+
+    universe
+
+    证券池，支持股票和基金两种证券，支持两种赋值方式：
+    证券代码列表，证券代码必须包含后缀，其中上证证券为.XSHG，深证证券为.XSHE，例如：universe = ['000001.XSHE', '600000.XSHG']
+    使用 set_universe 函数进行赋值，例如 universe = set_universe('HS300')，set_universe的使用方法见 常用变量与函数 章节。
+
+    capital_base
+
+    起始资金
+
+    refresh_rate
+
+    调仓频率，即每 refresh_rate 个交易日执行一次 handle_data() 函数。
+
+    security_base
+
+    初始证券头寸，例如： stock_base = {'000001.XSHE': 100, '600000.XSHG':200} ，表示策略初始情况下，拥有100股000001.XSHE和200股600000.XSHG
+
+    slippage
+
+    滑点标准，用于处理市场冲击问题，例如： slippage = Slippage(value=0.0, unit='perValue') 。
+    value为滑点的值
+
+    unit为滑点的单位，支持 perValue和perShare 两种类型，前者为默认值。
+
+    perValue 表示，买入股票的交易价格调整为 S × (1 + value)，卖出股票的交易价格调整为 S × (1 - value)，其中S表示股票当前实际价格；
+
+    perShare 表示，买入股票价格调整为 S + value，卖出股票价格调整为 S - value 。
+
+    commission
+
+    手续费标准，例如 commission = Commission(buycost=0.001, sellcost=0.002, unit='perValue')。
+    buycost 表示买进手续费
+    sellcost 表示卖出手续费
+
+    unit 表示手续费单位，支持 perValue 和 perShare 两种类型，前者为默认值。
+
+    perValue 表示按股价百分比收取每股手续费
+
+    perShare 表示按股数收取的每股手续费
+
+    若策略中定义了slippage，则commission在slippage调整后的股价基础上进行计算。
+
+    股票的最终成交价(transact price)的值为 slippage调整后的股价 + commission。您可以在策略运行后，在回测详情中的调仓记录中查看订单成交价格。
+
+    常用变量与函数
+
+    account
+
+    虚拟账户，策略初始化之前，会建立一个虚拟的交易账户 account，在这个账户会存储上述全局变量参数信息，并在整个策略执行期间更新并维护可用现金、证券的头寸、每日交易指令明细、历史数据等。account会在策略整个回测期间存续。
+
+    常用属性有：
+    account.universe：当前交易日的证券池，从全局变量universe中剔除了当天停牌、退市和数据缺失证券的证券池。数据类型为列表
+    account.universe_all：所有证券池，等于在全局变量参数中设置的universe。数据类型为列表
+    account.current_date：当前回测日期
+    account.days_counter：交易日计数
+    account.trading_days：回测期间的所有交易日列表
+    account.cash：前一交易日收盘之后的现金头寸。数据类型为浮点数
+    account.secpos：前一交易日收盘之后的证券头寸（即您持有的股票或基金），持有的数量可能为0。数据类型为字典，键为证券代码，值为头寸，例如：
+
+    {'000001.XSHE': 100, '600000.XSHG': 100}
+
+    account.valid_secpos：当前交易日的有效证券头寸，即在account.secpos中持有数量大于0的证券头寸。数据类型为字典，键为证券代码，值为头寸。
+    account.avail_secpos：可卖证券头寸。日间策略中与account.valid_secpos没有区别，日内策略时，由于T+1，account.avail_secpos表示当前证券头寸中可以卖出的证券。数据类型为字典，键为证券代码，值为头寸。
+    account.referencePrice：证券的参考价，一般使用的是上一日收盘价或者上一分钟收盘价。 数据类型为字典，键为证券代码，值为参考价，例如：
+
+    {'000001.XSHE': 12.477, '600000.XSHG': 14.112}
+
+    account.referenceReturn：证券的参考收益率，一般使用的是上一日收益率。数据类型为字典，键为证券代码，值为参考价，例如：
+
+    {'000001.XSHE': 0.033, '600000.XSHG': 0.032}
+
+    account.referencePortfolioValue：投资策略的参考价值，使用参考价计算
+    account.blotter：当前的下单指令列表，由于handle_data函数还未运行完毕，因此此时获得的下单指令列表中，所有指令还未成交。
+    account.commission：手续费标准
+    account.slippage：滑点标准
+    account.current_minute：当前回测分钟线（仅对日内策略有效）
+    account.pending_blotter：所有未成交指令（仅对日内策略有效）
+
+    account.get_attribute_history(attribute, time_range)
+    日间策略时，即freq='d'时：表示获取所有证券 attribute 属性在 time_range 天的历史数据
+    日内策略时，即freq='m'时：表示获取所有证券 attribute 属性在过去 time_range 个历史分钟线的历史数据。日内策略中获取历史日线数据，请使用下文描述的account.get_daily_attribute_history(attribute, time_range)方法
+    返回数据类型为 dict，键为每个证券的secID，值的数据类型为 list
+    attribute 支持 closePrice, highPrice, lowPrice, openPrice, preClosePrice, turnoverValue, turnoverVol
+
+    例如：
+
+    def handle_data(account):
+    all_close_prices = account.get_attribute_history('closePrice', 10)
+
+    某次all_close_prices的值为：
+
+    all_close_prices = { '000001.XSHE': array([ 10.072, 10.841, 10.824, 11.535, 12.006, 12.584, 11.328,11.725, 11.502, 11.518]), '600000.XSHG': array([ 11.619, 12.297, 12.02 , 12.679, 12.928, 13.195, 12.087, 12.574, 12.469, 12.402]) } ```
+
+    account.get_symbol_history(symbol, time_range)
+    日间策略时，即freq='d'时：表示获取单只证券的历史数据，即获取symbol证券中所有属性在 time_range 天的历史数据
+    日内策略时，即freq='m'时：表示获取单只证券的历史数据，即获取symbol证券中所有属性过去 time_range 个历史分钟线的历史数据。日内策略中获取历史日线数据，请使用下文描述的account.get_daily_symbol_history(symbol, time_range)方法
+    返回数据类型为 dict，键为 closePrice, highPrice, lowPrice, openPrice, preClosePrice, turnoverValue, turnoverVol，值的数据类型为 list
+    例如：
+
+    def handle_data(account):
+    single_symbol_history = account.get_symbol_history('000001.XSHE', 5)
+
+    某次single_symbol_history的值为：
+
+    single_symbol_history == {
+    'closePrice': array([ 16.93,  16.3 ,  16.56,  16.95,  16.66]),
+    'turnoverValue': array([  4.44733303e+09,   5.77643795e+09,   3.94335705e+09, 4.64033583e+09,   3.89352207e+09]),
+    'turnoverVol': array([  2.60952337e+08,   3.44725740e+08,   2.41593696e+08, 2.77314172e+08,   2.31968840e+08]),
+    'lowPrice': array([ 16.8 ,  16.16,  15.98,  16.5 ,  16.56]),
+    'highPrice': array([ 17.5 ,  17.2 ,  16.7 ,  16.98,  17.04]),
+    'openPrice': array([ 17.5 ,  17.1 ,  16.32,  16.58,  16.98]),
+    'preClosePrice': array([ 17.  ,  16.93,  16.3 ,  16.56,  16.95])
+    }
+
+    account.get_history(time_range)
+    日间策略时，即freq='d'时：表示获取所有证券的所有属性在过去 time_range 天的历史数据
+    日间策略时，即freq='d'时：表示获取所有证券的所有属性在过去 time_range 个历史分钟线的历史数据。日内策略中获取历史日线数据，请使用下文描述的account.get_daily_history(range)方法
+    返回数据类型为 dict，键为每个证券的secID，值为字典，等同于 account.get_symbol_history(symbol, time_range) 返回的内容
+    例如：
+
+    def handle_data(account):
+    all_history = account.get_history(3) # 返回所有证券最近3个交易日的行情数据
+
+    某次all_history的值为：
+
+    all_history == {
+    '000001.XSHE': {
+    'closePrice': array([ 16.56,  16.95,  16.66]),
+    'turnoverValue': array([  3.94335705e+09,   4.64033583e+09,   3.89352207e+09]),
+    'turnoverVol': array([  2.41593696e+08,   2.77314172e+08,   2.31968840e+08]),
+    'lowPrice': array([ 15.98,  16.5 ,  16.56]),
+    'highPrice': array([ 16.7 ,  16.98,  17.04]),
+    'openPrice': array([ 16.32,  16.58,  16.98]),
+    'preClosePrice': array([ 16.3 ,  16.56,  16.95])
+    },
+    '600000.XSHG': {
+    'closePrice': array([ 18.16,  18.5 ,  18.22]),
+    'turnoverValue': array([  6.61554064e+09,   7.71213068e+09,   6.67554199e+09]),
+    'turnoverVol': array([  3.68194681e+08,   4.20766743e+08,   3.63593631e+08]),
+    'lowPrice': array([ 17.75,  18.08,  18.11]),
+    'highPrice': array([ 18.19,  18.55,  18.64]),
+    'openPrice': array([ 17.75,  18.3 ,  18.5 ]),
+    'preClosePrice': array([ 17.9 ,  18.16,  18.5 ])
+    },
+    'benchmark': {
+    'closeIndex': array([ 4619.164,  4739.814,  4740.892]),
+    'return': array([ 0.02150525,  0.02611944,  0.00022744]),
+    'preCloseIndex': array([ 4521.919,  4619.164,  4739.814])
+    },
+    'tradeDate':
+    [datetime.datetime(2015, 4, 21, 0, 0),
+    datetime.datetime(2015, 4, 22, 0, 0),
+    datetime.datetime(2015, 4, 23, 0, 0)]
+    }
+    }
+
+    account.get_daily_attribute_history(attribute, time_range)
+    只支持日内策略，即freq='m'时。
+    表示获取所有证券某个 attribute 属性在过去 time_range 天的历史数据
+    返回数据类型为 dict，键为每个证券的secID，值的数据类型为 list
+    attribute 支持 closePrice, highPrice, lowPrice, openPrice, preClosePrice, turnoverValue, turnoverVol
+
+    例如：
+
+    def handle_data(account):
+    all_close_prices = account.get_attribute_history('closePrice', 10)
+
+    某次all_close_prices的值为：
+
+    all_close_prices = { '000001.XSHE': array([ 10.072, 10.841, 10.824, 11.535, 12.006, 12.584, 11.328,11.725, 11.502, 11.518]), '600000.XSHG': array([ 11.619, 12.297, 12.02 , 12.679, 12.928, 13.195, 12.087, 12.574, 12.469, 12.402]) }
+    ```
+
+    account.get_daily_symbol_history(symbol, time_range)
+    只支持日内策略，即freq='m'时。
+    表示获取单只证券的日线历史数据表示，即获取symbol证券中所有属性在过去 time_range 天的历史数据
+    返回数据类型为 dict，键为 closePrice, highPrice, lowPrice, openPrice, preClosePrice, turnoverValue, turnoverVol，值的数据类型为 list
+    例如：
+
+    def handle_data(account):
+    single_daily_symbol_history = account.get_daily_symbol_history('000001.XSHE', 5)
+
+    某次single_daily_symbol_history的值为：
+
+    single_daily_symbol_history == {
+    'closePrice': array([ 14.07,  14.69,  15.1 ,  14.92,  15.5 ]),
+    'turnoverValue': array([  2.85420788e+09,   2.88758145e+09,   3.62569026e+09,   3.98392322e+09,   3.63748423e+09]),
+    'turnoverVol': array([  2.01027102e+08,   1.99727585e+08,   2.43707335e+08,   2.58614817e+08,   2.36607838e+08]),
+    'lowPrice': array([ 13.68,  14.04,  14.52,  14.75,  14.87]),
+    'highPrice': array([ 14.85,  14.75,  15.18,  16.05,  15.59]),
+    'openPrice': array([ 14.74,  14.35,  14.61,  15.61,  14.93]),
+    'accumAdjFactor': array([ 0.82626265,  0.82626265,  0.82626265,  0.82626265,  0.82626265]),
+    'preClosePrice': array([ 14.75,  14.07,  14.69,  15.1 ,  14.92])
+    }
+
+    account.get_daily_history(time_range)
+    只支持日内策略，即freq='m'时。
+    表示获取所有证券的所有属性在过去 time_range 天的历史数据
+    返回数据类型为 dict，键为每个证券的secID，值为字典，等同于 account.get_symbol_history(symbol, time_range) 返回的内容
+    例如：
+
+    def handle_data(account):
+    all_history = account.get_history(3) # 返回所有证券最近3个交易日的行情数据
+
+    某次all_history的值为：
+
+    all_history == {
+    '000001.XSHE': {
+    'closePrice': array([ 16.56,  16.95,  16.66]),
+    'turnoverValue': array([  3.94335705e+09,   4.64033583e+09,   3.89352207e+09]),
+    'turnoverVol': array([  2.41593696e+08,   2.77314172e+08,   2.31968840e+08]),
+    'lowPrice': array([ 15.98,  16.5 ,  16.56]),
+    'highPrice': array([ 16.7 ,  16.98,  17.04]),
+    'openPrice': array([ 16.32,  16.58,  16.98]),
+    'preClosePrice': array([ 16.3 ,  16.56,  16.95])
+    },
+    '600000.XSHG': {
+    'closePrice': array([ 18.16,  18.5 ,  18.22]),
+    'turnoverValue': array([  6.61554064e+09,   7.71213068e+09,   6.67554199e+09]),
+    'turnoverVol': array([  3.68194681e+08,   4.20766743e+08,   3.63593631e+08]),
+    'lowPrice': array([ 17.75,  18.08,  18.11]),
+    'highPrice': array([ 18.19,  18.55,  18.64]),
+    'openPrice': array([ 17.75,  18.3 ,  18.5 ]),
+    'preClosePrice': array([ 17.9 ,  18.16,  18.5 ])
+    },
+    'benchmark': {
+    'closeIndex': array([ 4619.164,  4739.814,  4740.892]),
+    'return': array([ 0.02150525,  0.02611944,  0.00022744]),
+    'preCloseIndex': array([ 4521.919,  4619.164,  4739.814])
+    },
+    'tradeDate':
+    [datetime.datetime(2015, 4, 21, 0, 0),
+    datetime.datetime(2015, 4, 22, 0, 0),
+    datetime.datetime(2015, 4, 23, 0, 0)]
+    }
+    }
+
+    set_universe(symbol,date)
+
+    获取预设股票代码列表，例如 universe = set_universe(‘SH50’) ，支持两种方式：
+    参数symbol支持七个预设值：
+    SH50，表示上证50；
+    SH180，表示上证180；
+    HS300，表示沪深300；
+    ZZ500，表示中证500；
+    CYB，表示创业板；
+    ZXB，表示中小板；
+    A，表示全A股。
+    支持可以用 DataAPI.IdxConsGet 函数获取的所有指数，例如 set_universe('000906.ZICN')
+    参数 date 表示该日期时，symbol对应的股票代码列表，例如 set_universe('HS300','20150101') 表示2015年1月1日沪深300的股票列表。通过使用 date 参数，可以避免策略中的生存者偏差问题，让您动态获得股票池列表。
+
+    order(symbol, amount, price = 0., otype = 'market')
+    在handle_data(account)函数中使用
+    用来模拟下达买卖指令，表示买入amount股symbol股票。
+    参数 symbol，str类型，表示需要交易的证券代码，必须包含后缀，其中上证证券为.XSHG，深证 证券为.XSHE
+    参数 amount，整数类型，表示需要交易的证券代码为symbol证券数量，为正则为买入，为负则 为卖出；程序会自动对 amount 向下取整到最近的整百
+    参数 price，该参数仅限日内策略使用，float类型，表示下限价单时的下单价格
+    参数 otype，str类型，表示交易指令类型，可选值为 'market'和'limit','market'表示市价仅限日内策略使用，'limit'限价。
+
+    order_to(symbol, mount, price = 0., otype = 'market')
+    在handle_data(account)函数中使用
+    用于模拟下达买卖指令，表示卖出symbol股票直至剩余amount股
+    后台实现为对order的包装，因此如果在同一天多次对同一证券使用order_to函数，可能导致下单数量异常。
+    参数 symbol，str类型，表示需要交易的证券代码，必须包含后缀，其中上证证券为.XSHG，深证 证券为.XSHE
+    参数 amount，整数类型，表示该证券交易至amount股，为正则为买入，为负则 为卖出；程序会自动对 amount 向下取整到最近的整百
+    参数 price，该参数仅限日内策略使用，float类型，表示下限价单时的下单价格
+    参数 otype，str类型，表示交易指令类型，可选值为 'market'和'limit','market'表示市价仅限日内策略使用，'limit'限价。
+
+    order_pct(symbol, pct, price=0., otype = 'market')
+    在handle_data(account)函数中使用
+    表示证券symbol需要买入（卖出）的价值为虚拟账户当前总价值的pct百分比，仅限市价单
+    参数 symbol，str类型，表示需要交易的证券代码，必须包含后缀，其中上证证券为.XSHG，深证 证券为.XSHE
+    参数 pct，float类型，表示需要交易证券价值占虚拟账户达昂前总价值的百分比，范围为 -1 ~ 1，为正则为买入，为负则为卖出；程序会自动对 amount 向下取整到最近的整百
+    参数 price，该参数仅限日内策略使用，float类型，表示下限价单时的下单价格
+    参数 otype，str类型，表示交易指令类型，可选值为 'market'和'limit','market'表示市价仅限日内策略使用，'limit'限价。
+
+    order_pct_to(symbol, pct, price=0., otype = 'market')
+    在handle_data(account)函数中使用
+    表示为买入（卖出）证券symbol，使得其价值为虚拟账户当前总价值的pct百分比，仅限市价单
+    参数 symbol，str类型，表示需要交易的证券代码，必须包含后缀，其中上证证券为.XSHG，深证 证券为.XSHE
+    参数 pct，float类型，表示需要交易的证券代码为symbol的证券占虚拟账户当前总价值的百分比，范围为 -1 ~ 1，为正则为买入，为负则为卖出；程序会自动对 amount 向下取整到最近的整百
+    参数 price，该参数仅限日内策略使用，float类型，表示下限价单时的下单价格
+    参数 otype，str类型，表示交易指令类型，可选值为 'market'和'limit','market'表示市价仅限日内策略使用，'limit'限价。
+
+    observe(name, value)
+    在handle_data(account)函数中使用，用于运行回测后，在 bt 中增加一列自定义需要观测的变量。
+    参数 name ，str类型，表示需要观测的变量名称
+    参数 value，表示需要观测的变量值
+    如果 refresh_rate > 1，那么不交易期间的 name 依然保留上一次调用 handle_date 时候的 value。
+    仅限日间策略。
+    详细使用方法参考社区分享 回测数据保存监控 - observe使用示例
+
+    数据预处理
+
+    股价前复权：
+
+    股票价格受拆分、股息等事件的影响，股价会出现大幅的变动。
+
+    我们对股价和成交量进行了权息修复，即使用了前复权股价，您在回测时不必关心股票的拆分、股息等事件的影响。
+
+    前复权的数据您可以通过调用DataAPI进行校验查看，例如：
+
+    DataAPI.MktEqudAdjGet(ticker=u"000001")
+
+    涨跌停、停牌、未上市等情况
+
+    我们在回测框架中对证券涨跌停、停牌、未上市等情况做了预处理：
+    涨跌停：当天股票涨停则该股票无法买入，当天股票跌停则该股票无法卖出
+    停牌：当天股票停牌，则无法买入
+    未上市：当天股票未上市，则无法买入
+
+    其他
+
+    为了保障回测期间的数据的可用性，您的下单对象若不在universe中设置的证券池之中，我们将不对该证券做下单处理。
+
+    当前可以下单的证券池，您可以通过 account.unverse 获取。
+
+    『优矿』中的Strategy模式由Quartz框架提供支持；
+
+    包括上文提到的各种变量与函数，都是在Quartz框架下运行的。
+
+    关于Quartz下各个变量与函数的更详细信息，请查看 Quartz详细帮助
+
+    如何使用股票筛选器
+
+    写策略的时候您可能会遇到这样的场景：
+
+    在一个很大的大股票池中计算各个股票的指标数据，比如PE，PB.
+
+    根据1中计算的结果，从大股票池中筛选出一部分的股票，将这些股票作为股票池，构建策略。
+
+    股票筛选器就是为这样的场景构建的工具，便于用户动态维护股票池，节省获取大量股票数据、计算指标的时间。
+
+    股票筛选器基于通联数据提供的133个基本面和技术面的因子数据（正在不断扩充）。
+
+    您可以基于股票因子数据定义筛选条件，而后在回测中使用它们的结果。
+
+    目前仅支持从2011年1月4日开始至今的股票日间回测
+
+    在阅读本部分之前，建议先阅读 如何写个策略，以对策略回测运行的框架、交易策略参数以及相关术语有一定的了解，这样可以更好地理解本部分的内容。
+    构建筛选条件表达式
+
+    对于单个因子筛选条件来说，可以通过以下方法进行定义：
+
+    # from quartz.api import *
+    # 在非strategy单元模式下运行时，最好加上上面这句
+
+    # Factor..<筛选方法>
+        ，例如：
+        Factor.PE.nlarge(10)
+
+        其中，共有两个地方需要输入：
+
+        factor_name:
+
+        因子名，即该筛选条件是基于何种因子的。您可以输入Factor.之后按Tab键通过代码提示获得支持的所有因子，也可以使用以下方法获得股票筛选器支持的所有因子：
+
+        StockScreener.available_factors()
+
+        筛选方法：
+
+        即采用何种筛选方法来挑选股票。目前提供了5种方法：value_range （按值筛选）, pct_range （按百分比筛选）, num_range （按序号筛选）, nlarge （取最大）, nsmall （取最小），具体使用方法参看 Factor。
+
+        value_range(self, lbound, ubound)： 筛选因子值处于上下界之间的证券（包含两端）。
+
+        参数:
+
+        lbound (float) – 条件参数下界
+
+        ubound (float) – 条件参数上界
+
+        pct_range(self, lbound, ubound)： 筛选因子值处于百分比上下分位点之间的证券（包含两端），默认升序排列
+
+        参数:
+
+        lbound (float) – 条件参数下界
+
+        ubound (float) – 条件参数上界
+
+        num_range(self, lbound, ubound)： 筛选因子值处于上下界序号之间的证券（包含两端），默认升序排列
+
+        参数:
+
+        lbound (int) – 条件参数下界
+
+        ubound (int) – 条件参数上界
+
+        nlarge(self, n)： 筛选因子值最大的n只证券
+
+        参数:
+
+        n (int) – 条件参数
+
+        nsmall(self, n)： 筛选因子值最小的n只证券
+
+        参数: n (int) – 条件参数
+
+        通过以上方法，就可以很方便的定义出一条因子筛选条件了。然而在实际使用中，我们往往希望使用多个筛选条件综合作用，以获得更佳的效果。股票筛选器在单因子筛选条件的基础上，也提供了多条筛选条件复合表达的功能。
+
+        在两个筛选条件之间，您可以可以进行与（&）和或（|）两种运算，分别代表将筛选出股票列表进行交运算和并运算，学习过集合论基础知识的话应该能够很容易的理解。
+
+        对于三个或更多筛选条件，您还可以加上括号来构成更为复杂的表达式，例如：
+
+        (Factor.PE.nlarge(100) | Factor.PB.pct_range(0.95, 1)) & Factor.RSI.value_range(70, 100)
+
+        构建股票筛选器
+
+        在构建完筛选条件的表达式之后，我们可以构建股票筛选器了。构建方法十分简单：
+
+        # StockScreener(<筛选条件表达式>
+            )
+            # 例如
+            StockScreener(Factor.PE.nlarge(100))
+
+            在某些情况下，我们可能需要在筛选器以外自定义一些股票作为筛选器的补充，我们可以使用如下的语句来完成这一任务：
+
+            # StockScreener(<筛选条件表达式>
+                ) + [自定义股票列表]
+                # 例如
+                StockScreener(Factor.PE.nlarge(100)) + ['000001.XSHE', '600000.XSHG']
+
+                注意：为了避免性能上的问题，StockScreener中使用的筛选条件表达式中的单因子条件数量限制为最多5条。
+
+                通过以上方法构建了股票筛选器后，您可以先初步查看下筛选结果，例如：
+
+                universe = StockScreener(Factor.PE.nlarge(10))
+                # 查看某一天的筛选结果
+                universe.preview('2015-12-17')
+                # 输出结果为以日期为key的字典：
+                # {'2015-12-17': [u'000736.XSHE',  u'002151.XSHE',  u'002288.XSHE',  u'002468.XSHE',  u'002474.XSHE',  u'002639.XSHE',  u'600107.XSHG',  u'600536.XSHG',  u'600556.XSHG',  u'600764.XSHG']}
+
+                使用股票筛选器的例子
+
+                上面我们学习了如何构建一个股票筛选器，那么如何在Quartz的回测框架中使用这个筛选器呢？
+
+                使用的方法非常简单，只需要把股票池定义成筛选器就可以了：
+
+                start = ...
+                end = ...
+                benchmark = ...
+                universe = StockScreener(<筛选条件表达式>
+                    ) + [自定义股票列表]
+                    ...
+
+                    def initialize(account):
+                    ...
+
+                    def handle_data(account):
+                    account.universe
+                    account.screenerData
+
+                    例如：
+
+                    start = '2014-01-01'
+                    end = '2015-01-01'
+                    benchmark = 'HS300'
+                    universe = StockScreener(Factor.PE.nlarge(10)) + ['000001.XSHE', '600000.XSHG']
+                    capital_base = 100000
+                    freq = 'd'
+                    refresh_rate = 1
+
+                    def initialize(account):
+                    pass
+
+                    def handle_data(account):
+                    for s in account.universe:
+                    order(s,100)
+
+                    当使用筛选器定义股票池之后，在每个交易日的handle_data中，account.universe中即为前一个交易日通过股票筛选器筛选出来的股票列表，再除去当日不能交易的那些股票。
+                    如何做个分析
+
+                    Code模式下，您可以在单元中调用多种金融、数学相关的函数库，包括：
+
+                    CAL：是量化实验为固定收益及衍生品建模定制的金融分析库。
+                    numpy, pandas, scipy, matplotlib, mpl_toolkits, math, datetime, dateutil, talib 等python开源函数库。
+
+                    python开源函数库相关的帮助说明您可以在网络中轻易获取。
+
+                    接下来介绍CAL的相关信息。
+                    CAL（Common Analytic Library）
+
+                    固定收益及衍生品建模
+                    核心以 C++ 开发，保证高性能
+                    有 Python 接口，方便使用
+
+                    相比于QuantLib，CAL在中国市场化方面做了如下努力：
+
+                    我们提供了CAL的 详细中文文档
+                    金融工具中国市场化，QuantLib开发人员主要为欧美，直接使用后将带来局限性。我们根据正宗国市场需求定制了Shibor 市场指数、回购互换、中国国债期货等等。
+
+                    关于CAL下具体函数的使用方法，请查看 CAL详细帮助
+
+                    如何编写文档
+
+                    Markdown模式下，您可以通过Markdown文档、LaTeX方程、代码等行使自由编写丰富的文档内容。
+
+                    Markdown是一种轻量级的标记语言，由于它简单的语法、不超过10个的标记符号，学习成本非常低，被越来越多的文档编写人员、写作爱好者所广泛使用。一单掌握了它的语法规则，会有一劳永逸的效果。
+
+                    Markdown官方语法说明
+
+                    Markdown中文版语法说明
+
+                    如何获取数据
+
+                    您可以在Notebook中通过调用 DataAPI 函数，获取债券、股票、基金、基本面、期货、指数、宏观、市场、新闻等海量数据；
+
+                    您可以在 DataAPI帮助 页面中查看每个DataAPI的详细帮助文档，其中显示未购买的数据您可以在数据商城 中获得；
+
+                    您也可以在Data中上传本地txt、csv、xls、xlsx文件。
+
+                    DataAPI
+
+                    DataAPI.函数名称 的方式，可以免费使用通联数据提供的债券、股票、基金、基本面、期货、指数、宏观、市场等海量数据。
+
+                    为了方便您的使用，我们已经将 DataAPI 作为内置函数，您无需 import，可以直接在Code模式或Strategy模式下调用DataAPI`函数
+
+                    以下为一个简单的例子，通过 DataAPI 函数获取市场日线数据，并用 matplotlib 绘制出来。
+
+                    # DataAPI.MktEqudGet返回pandas.DataFrame格式
+                    MarketEqud =  DataAPI.MktEqudGet(secID = "000002.XSHE",
+                    field = ["shortNM", "closePrice", "turnoverValue", "capitalInflow"],
+                    beginDate = "20000106",
+                    endDate = "20140110")
+                    # 绘制返回的数据
+                    Plot(MarketEqud, settings = {'x':'tradeDate','y':'closePrice', 'title':u'万科历史收盘价格'})
+
+                    通过DataAPI.数据提供商缩写.函数名称 的方式，您可以使用在 数据商城 中购买的数据。
+
+                    例如，您在数据商城购买恒生聚源交易所债券行情后，可以通过以下方式在Notebook中调用：
+
+                    DataAPI.JY.MktBonddJYGet(secID='100213.XSHE')
+
+                    数据文件
+
+                    您可以在Data标签页中上传txt、csv、xls、xlsx文件，并在Notebook中调用。
+
+                    在Notebook中的Code或Strategy单元中，您可以使用pandas读写xls、xlsx。例如：
+
+                    import pandas as pd
+
+                    MarketEqud.to_excel('test1.xls','Sheet1',)        # DataFrame数据写入excel文件
+                    pd.read_excel('test1.xls','Sheet1')               # 读取excel文件为DataFrame数据结构
+
+                    在Notebook中的Code或Strategy单元中，您可以使用 read 和 write 函数对Data标签页中的 txt 和 csv 文件进行读写。例如：
+
+                    write('test2.csv','We can do all kinds of investment research in one place!')        # 写入的文件若不存在，则创建
+                    read('test2.csv')
+
+                    这里默认编码方式为gbk，如果您想要使用其他编码方式，可以在write或read函数中添加encoding参数，比如：
+
+                    write('test3.csv','We can do all kinds of investment research in one place!', encoding = 'utf-8')
+                    read('test3.csv',encoding = 'utf-8')
+
+                    Data标签页中的数据预览目前只支持gbk编码文件的预览。
+                    Library是干什么的
+
+                    Notebook中的code单元模式可以创建为Library，创建成功后，可以像普通函数库如pandas一样在Notebook中被调用，区别于『优矿』中的其它模块，您创建的Library将是您私有的。该功能将大大提升您的代码扩展性。
+
+                    Library的使用流程为：
+
+                    在Notebook的Code模式下编辑代码，并运行全部，确保所有code模式下的单元不报错；
+                    在Notebook的菜单栏中，点击“文件”、“创建为Library”；
+                    输入Library的名称，例如 “test”，确认创建后，您可以在Library中看到 lib.test 库；
+                    在需要调用该Library的Notebook中import该库，例如，import lib.test，其中lib. 是我们为您设置的自定义Library命名空间，因此此时的lib.是必须的。
+                    然后您就可以像使用一般的函数库一样使用该Library了。
+
+                    这里举个最简单的例子，您可以先在Notebook中输入以下代码：
+
+                    def HelloWorld():
+                    print 'Hello World!'
+
+                    class SampleClass:
+                    def HelloWorld(self):
+                    print 'Hello World! Again'
+
+                    代码运行正常后，选择创建为Library，并命名为test，您在当前的Notebook或新建的Notebook中使用该模块了：
+
+                    import lib.test as t
+
+                    t.HelloWorld()              # 输出中打印 Hello World!
+
+                    sample = t.SampleClass()
+                    sample.HelloWorld()         # 输出中打印 Hello World! Again
+
+                    注意：
+
+                    只有Code单元模式下的代码会被创建为Library，其他单元模式如Markdown、Strategy，将会被忽略；
+
+                    模拟交易是干什么的
+
+                    模拟交易功能让您在不需要实际投资的情况下，观察策略在真实市场中的实时表现。
+
+                    模拟交易是程序化策略中必不可少的步骤。在模拟交易过程会暴露出例如过度拟合等问题，降低您在真实投资中的风险。
+
+                    本模拟交易功能中，将根据您的策略代码于每天早上开市之前生成下单指令，下单指令的执行由通联数据旗下的PMS系统提供支持。
+
+                    日内策略暂不支持模拟交易功能
+
+                    『优矿』提供您在策略回测后，一键进行策略的模拟交易。
+
+                    模拟交易功能的功能流程为：
+
+                    创建模拟交易时，根据策略的起始资金等参数设置，创建模拟证券账号
+                    每天早上开市之前时间运行 handle_data 函数，生成当天的交易信号
+                    每天开始后，将交易信号下达至后台PMS系统，由PMS系统处理订单的成交情况
+
+                    例如，您在周一晚上19:00在Notebook strategy模式下输入以下代码，写了每只股票每天购买100股的策略：
+
+                    start = '2014-01-01'                       # 回测起始时间
+                    end = '2015-01-01'                         # 回测结束时间
+                    benchmark = 'HS300'                        # 策略参考标准
+                    universe = ['000001.XSHE', '600000.XSHG']  # 证券池，回测支持股票和基金
+                    capital_base = 100000                      # 起始资金
+                    refresh_rate = 1                           # 调仓频率，即每 refresh_rate 个交易日执行一次 handle_data() 函数
+
+                    def initialize(account):                   # 初始化虚拟账户状态
+                    pass
+
+                    def handle_data(account):                  # 每个交易日的买入卖出指令
+                    for stock in account.universe:
+                    order(stock,100)
+
+                    策略回测运行成功后，点击该单元输出右上角的 “模拟交易” 按钮，输入策略名称后点击 “开始模拟”，此时您将在 『模拟交易』 页面看到您刚刚创建的策略，点击策略名称，进入模拟交易详情页面，可以查看该策略的业绩表现、日志、代码等信息。
+
+                    由于当前为非交易时间，策略会先执行 initialize 函数部分，等到第二天交易时间之前（周二9:30之前），平台会自动运行 handle_data 函数生成当天的下单指令，下单指令可以在策略概览的调仓记录中查看，由于是非交易时间，显示“准备下单”状态。
+
+                    等到9:30之后，系统会将当天的所有下单指令发送至后台PMS（组合管理系统）进行模拟交易。您可以在模拟交易详情页面中的调仓记录中查看每个订单的成交情况。
+
+                    若模拟交易创建时间为交易时间，则策略会依次运行 initialize 函数和 handle_data 函数生成下单指令，并且该下单指令会立马进行模拟成交。
+                    模拟交易日志
+
+                    模拟交易中支持两种日志：
+
+                    系统日志，共有三种系统类型，本平台会将策略运行中的一些运行错误信息、错误后修复等信息在日志中显示，若对日志内容有疑问，可以邮件联系 service.uqer@datayes.com 或者电话 4000-820-386 ：
+                    [SYS FATAL]: 策略出现严重错误，可能为内存过大、initialize 函数运行出错等原因，策略将会停止。
+                    [SYS ERROR]: 策略出现错误，可能为当天handle_data 函数运行错误、系统服务不稳定等原因，只影响策略当天生成的下单指令，策略未来会继续运行。
+                    [SYS INFO]: 表示策略状态，一般为成功操作的提示。
+
+                    用户自定义日志：
+                    您可以在策略代码中使用 log 相关函数，回测中，您将看到该函数会有类似print的输出，模拟交易中，您将在日志中看到对应的输出。
+                    log相关函数有4种:
+                    log.info('message') : 在模拟交易中显示 [INFO] 日志。
+                    log.debug('message') : 在模拟交易中显示 [DEBUG] 日志。
+                    log.error('message') : 在模拟交易中显示 [ERROR] 日志。
+                    log.warn('message') : 在模拟交易中显示 [WARN] 日志。
+
+                    平台每天晚上会对日志进行回收，保留最近的100条日志在模拟交易中显示。
+                    模拟交易与回测的差异
+
+                    模拟交易中，capital_base 参数只支持变量；
+                    模拟交易中，start, end, csvs, stock_base, slippage, commission等参数会被忽略 ；
+                    模拟交易中，只能整手地购买股票，但可以以股为单位卖出；
+                    模拟交易中，每个交易日运行 handle_data 时发生的运行错误，只影响当天下单不成功，不影响第二天的下单状态；
+                    模拟交易中，订单数量按整数手处理，即订单量除以100后向下取整。
+
+                    如何进行实盘交易
+
+                    您可以通过参加量化大赛赢取实盘管理资金的资格，优矿出资金，您出策略，亏损算优矿，超额收益全归您，可查看大赛页面了解详情： 500万实盘量化大赛
+
+                    未来您还可以在优矿中使用自己的资金，进行实盘操作。该功能即将推出，敬请期待！
+                    如何玩转『优矿』
+
+                    代码补全：单元为Code或Strategy模式时，输入部分变量或函数，按 Tab 键后，会进行代码自动补全，若有多个选项时，显示补全列表。
+                    帮助面板：单元为Code或Strategy模式时，输入“完整的变量名称或函数名称+？”，运行后，在界面右下方会显示该变量或函数的帮助面板。（请克隆本文档后，尝试运行下方代码）
+                    Notebook状态：
+                    当一个单元处于运行中或等待运行时，其单元边框会变为绿色，页面右下方的状态栏中会显示绿色圆点，并提示开始运行；
+                    若单元运行结束，其边框颜色会恢复成蓝色，若Notebook中所有单元都运行结束，页面右下方状态栏的绿色圆点会变回灰色，并提示运行完毕。
+                    Notebook自动保存、重启、网络连接等状态将在页面右下方状态栏中以文字显示。
+                    Notebook快捷键， Notebook中支持sublime中的大部分快捷键，常用快捷键例如：
+                    Ctrl+S —— 保存当前Notebook
+                    Tab —— 光标前面有代码时，显示代码提示；光标前无代码时，则缩进
+                    Ctrl+Enter —— 运行当前
+                    Shift+Enter —— 运行并继续
+                    Ctrl+/ —— 注释整行/撤销注释
+                    Ctrl+Z —— 撤销当前单元操作
+                    Ctrl+Y —— 恢复当前单元撤销
+                    Ctrl+[ —— 多行/当前行去除缩进
+                    Ctrl+] —— 多行/当前行缩进
+                    Ctrl+D —— 选择当前光标附近的字符串，多次按键，可选择同一单元中的相同字符串，多用于替换等操作
+                    Ctrl+Shift+D —— 复制并粘贴当前行
+                    Ctrl+J —— 与下一行合并
+                    Ctrl+L —— 选择一行
+                    Shift-Ctrl-Up —— 交换上一行代码
+                    Shift-Ctrl-Down —— 交换下一行代码
+                    Alt+Left —— 向左移动一个字符串
+                    Alt+Right —— 向右移动一个字符串
+                    分享到社区：每个Notebook都可以一键分享到『社区』，在Notebook页面标题右方您会看到分享的按钮。分享到社区后，您的Notebook将会被所有人看到。
+                    从社区克隆：您在社区看到的任何感兴趣的Notebook分享，都可以一键克隆至自己的研究环境 —— 『开始研究』页面。克隆后，您对该Notebook编辑等等改变都是私有的。
+
+                    开始研究FAQ
+
+                    策略回测结果中策略收益无论涨跌比例都很小，为什么？
+
+                    请检查参数 capital_base 的数值，如果数值过大而下单的股票数量较小的话，则会出现策略收益过小的情况。
+
+                    策略回测时，下单买入股票时现金不够了，会发生什么？
+
+                    此单会成交一部分，从输出的回测报告中调出当天的 blotter 细节，可以看到 Order 里有一个属性是 filled，这个属性即是指这一笔 Order 成交的数量。
+
+                    策略回测时，有时候 Order 不能成交，为什么？
+
+                    如果是买入的话，原因是当天该股票停牌，即该股票交易量为0；如果是卖出的话，原因是虚拟账户中没有足够多的该股票。
+
+                    策略回测中遇到涨跌停怎么办？
+
+                    Quartz 处理了 涨跌停、停牌、未上市 等事件下的情况，具体可以参见 数据预处理 章节
+
+                    策略回测时，如果买卖数量较大，都能成交吗？
+
+                    Quartz 对交易的判断所用买卖数量上限是当日的交易量，如果指令数量超出了该股票当日交易量，只会成交相当于当日交易量的部分。
+
+                    500万实盘量化大赛FAQ
+
+                    500万实盘量化大赛的日程安排是怎么样的？
+                    第一期：提交策略阶段从8月18日至9月14日，正式排名阶段从9月15日至10月22日，实盘阶段从11月23日至12月18日；
+                    第二期：提交策略从9月15日至10月22日，正式排名从10月23日至11月22日，实盘从12月21日至1月15日；
+                    第三期：提交策略从10月23日至11月22日，正式排名从11月23日至12月22日，实盘从1月18日至2月19日；
+                    第四期：提交策略从11月23日至12月25日，正式排名从12月26日至1月22日，实盘从2月22日至3月18日；
+                    第五期：提交策略从12月26日至1月25日，正式排名从1月26日至2月29日，实盘从3月21日至4月15日；
+                    后续日程安排敬请期待
+
+                    我如何报名参加大赛？
+
+                    1）无需报名，只需注册成为优矿用户；
+
+                    2）进入开始研究页面，提交策略参加大赛，详细参赛方法请参考 优矿量化大赛循环赛参赛方法。
+
+                    我的策略中应该注意什么？
+
+                    大赛的评分由两部分组成：回测积分以及模拟盘积分.
+
+                    提交的参赛策略后，系统会将策略中的参数按照如下设置，运行回测，根据该回测结果计算回测积分：
+
+                    start = '2012-08-01'
+                    end = '2015-08-01'
+                    benchmark = 'HS300'
+                    capital_base = 1000000
+                    csvs = []
+                    security_base = {}
+                    commission = Commission(buycost=0.0008, sellcost=0.0018)  # 佣金万八
+                    slippage = Slippage()
+
+                    提交参赛后，您当前策略所在的Notebook会被后台用于执行该策略的回测，从而处于无法运行的状态，当您提交的策略回测结束后，Notebook可以正常使用。
+
+                    模拟交易过程中，策略中的部分参数会按照如下设置运行：
+
+                    capital_base = 1000000
+                    csvs = []
+                    security_base = {}
+                    commission = Commission(buycost=0.0008, sellcost=0.0018)  # 佣金万八
+                    slippage = Slippage()
+
+                    为什么我提交的策略大赛状态显示“停止参赛”？
+
+                    以下3种情况下你的策略会显示“停止参赛”
+
+                    1）“回测错误”：若您在“策略状态”栏中看到该策略状态为“回测错误”，您可以在Notebook中将您的参赛策略按照第2点描述的回测参数设置，运行后查看回测错误原因。
+
+                    2）“回测超时”：若您在“策略状态”栏中看到该策略状态为“回测超时”，是由于您的参赛策略所在的Notebook微核被关闭，或策略回测时间超过2小时，请检查Notebook的微核状态，或优化策略将回测运行时间缩减至5小时以内。
+
+                    3）“终止”：若您在“策略状态”栏中看到该策略状态为“终止”，是由于您的手动终止了该参赛策略。
+
+                    为什么我的参赛策略状态显示 “异常”？
+
+                    策略状态“异常”后，您的策略不会继续参赛。
+
+                    有较多原因会导致你的策略状态显示异常，如果您检查您的策略代码没有问题，可以联系我们帮您重启策略。邮件 lianghua@datayes.com , 或电话 4000 820 386 ，或在社区中进行提问。
+
+</body>
+</html>

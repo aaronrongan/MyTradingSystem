@@ -1,0 +1,683 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3671B2A5-9E81-4040-B222-5CD38004C404}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MyTradingSystem.My.MyApplication</StartupObject>
+    <RootNamespace>MyTradingSystem</RootNamespace>
+    <AssemblyName>MyTradingSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MyTradingSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+    <RegisterForComInterop>true</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MyTradingSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <RegisterForComInterop>true</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BSE.Windows.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirdParty\BSE.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirdParty\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="libgmnet, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirdParty\libgmnet.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics">
+      <HintPath>..\packages\MathNet.Numerics.3.10.0\lib\net40\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="microsoft.msxml, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\ThirdParty\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="TASCIndicators">
+      <HintPath>..\..\ThirdParty\TASCIndicators.dll</HintPath>
+    </Reference>
+    <Reference Include="TeeChart, Version=2.0.1992.14011, Culture=neutral, PublicKeyToken=9c8126276c77bdb7">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steema Software\Steema TeeChart for .NET 2015 Evaluation 4.1.2015.08066\net45\x86\TeeChart.dll</HintPath>
+    </Reference>
+    <Reference Include="WealthLab.IndexDefinitions">
+      <HintPath>..\..\ThirdParty\WealthLab.IndexDefinitions.dll</HintPath>
+    </Reference>
+    <Reference Include="WealthLab.Indicators">
+      <HintPath>..\..\ThirdParty\WealthLab.Indicators.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\CDataFeedCSV.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\CDataFeedGoldMiner.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\IDataFeed.vb" />
+    <Compile Include="ClassLibrary\20_DataEntity\CDTIntra.vb" />
+    <Compile Include="ClassLibrary\20_DataEntity\CDTPrice.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\20_DataEntity\IDTPrice.vb" />
+    <Compile Include="ClassLibrary\30_Indicator\CIndicatorFactory.vb" />
+    <Compile Include="ClassLibrary\30_Indicator\CIndicatorPlotSets.vb" />
+    <Compile Include="ClassLibrary\30_Indicator\CIndicatorSets.vb" />
+    <Compile Include="ClassLibrary\30_Indicator\CIndicator_BBand.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\30_Indicator\CIndicator_EMA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\30_Indicator\CIndicator_MA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\30_Indicator\CIndicator_SMA2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\30_Indicator\CIndicator_SMA3.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\30_Indicator\CIndicator_Volume.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\40_Graph\CTeeChartManaged.vb" />
+    <Compile Include="ClassLibrary\50_Strategy\CStrategyFactory.vb" />
+    <Compile Include="ClassLibrary\50_Strategy\CStrategy_MACDCrossover.vb" />
+    <Compile Include="ClassLibrary\50_Strategy\IStrategy.vb" />
+    <Compile Include="ClassLibrary\80_Transaction\CCommission.vb" />
+    <Compile Include="ClassLibrary\80_Transaction\COrderSet.vb" />
+    <Compile Include="ClassLibrary\80_Transaction\CPosition.vb" />
+    <Compile Include="ClassLibrary\80_Transaction\CSlippage.vb" />
+    <Compile Include="ClassLibrary\80_Transaction\CTransactionCommand.vb" />
+    <Compile Include="ClassLibrary\80_Transaction\CTransactionCost.vb" />
+    <Compile Include="ClassLibrary\80_Transaction\CTransactionLog.vb" />
+    <Compile Include="ClassLibrary\80_Transaction\CTransactionSignal.vb" />
+    <Compile Include="ClassLibrary\91_QuantTrade\CBenchMark.vb" />
+    <Compile Include="ClassLibrary\91_QuantTrade\CContext.vb" />
+    <Compile Include="ClassLibrary\91_QuantTrade\CQuantTrade_BT_001.vb" />
+    <Compile Include="ClassLibrary\92 QuantScan\CSecurityPool.vb" />
+    <Compile Include="ClassLibrary\60_MoneyManagement\CStopLoss.vb" />
+    <Compile Include="ClassLibrary\50_Strategy\CStrategy_Turtle.vb" />
+    <Compile Include="ClassLibrary\92 QuantScan\CChance.vb" />
+    <Compile Include="ClassLibrary\92 QuantScan\CHotList.vb" />
+    <Compile Include="ClassLibrary\92 QuantScan\CScanner.vb" />
+    <Compile Include="ClassLibrary\80_Transaction\ErrorCode.vb" />
+    <Compile Include="ClassLibrary\90_Assets\CAssetsCurrent.vb" />
+    <Compile Include="ClassLibrary\90_Assets\CAssetsHistory.vb" />
+    <Compile Include="ClassLibrary\91_QuantTrade\CMarketActionType.vb" />
+    <Compile Include="ClassLibrary\92 QuantScan\CScanRules.vb" />
+    <Compile Include="ClassLibrary\93_Portofolio\CAccount.vb" />
+    <Compile Include="ClassLibrary\93_Portofolio\CPortfolio.vb" />
+    <Compile Include="ClassLibrary\91_QuantTrade\CPositionRules.vb" />
+    <Compile Include="ClassLibrary\92 QuantScan\CQuantScan.vb" />
+    <Compile Include="ClassLibrary\91_QuantTrade\CQuantTrading.vb" />
+    <Compile Include="ClassLibrary\CSystemInit.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataBase\CDBADO\CDBADOCommand.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataBase\CDBADO\CDBADOConnection.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataBase\CDBADO\CDBADODataReader.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataBase\CDBADO\CDBADODataRelation.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataBase\CDBADO\CDBADODataTable.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataBase\CDBADO\CDBADOSQLAdapter.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataBase\CDBDataBindingControl.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataBase\ConnectionString.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataBase\CDBSqlServerWrapper.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataExport\CDataExportExcel.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataExport\CDataExportCSVTXT.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\CDataFeedBASE.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\DataFeedDatayes\CDataFeedDatayes.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\CDataFeedMatlabFaruto.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\CDataFeedTDX.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\DataFeedWeb\CDataFeedWeb.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\CDataFeedWind.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\DataFeedDatayes\CDataFeedDatayes_BundInfo.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\DataFeedDatayes\CDataFeedDatayes_Fundamental.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\DataFeedDatayes\CDataFeedDatayes_FundInfo.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\DataFeedDatayes\CDataFeedDatayes_FutureInfo.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\DataFeedDatayes\CDataFeedDatayes_General.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\DataFeedDatayes\CDataFeedDatayes_IndexInfo.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\DataFeedDatayes\CDataFeedDatayes_Macro.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\DataFeedDatayes\CDataFeedDatayes_OptionInfo.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\DataFeedDatayes\CDataFeedDatayes_Price.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\DataFeedDatayes\CDataFeedDatayes_StockInfo.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\DataFeedWeb\CDataFeedWeb_FundInfo.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\DataFeedWeb\CDataFeedWeb_IndexInfo.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\DataFeedWeb\CDataFeedWeb_Price.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataFeed\DataFeedWeb\CDataFeedWeb_StockInfo.vb" />
+    <Compile Include="ClassLibrary\20_DataEntity\CDataCellPrice.vb" />
+    <Compile Include="ClassLibrary\20_DataEntity\CDSDaily.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\20_DataEntity\CDSDaily_Fund.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\20_DataEntity\CDSDaily_Index.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\20_DataEntity\CDSDaily_Stock.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\20_DataEntity\CDTInfo_General.vb" />
+    <Compile Include="ClassLibrary\20_DataEntity\CDTInfo_FundCompany.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\20_DataEntity\CDTDaily_Fund.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\20_DataEntity\CDTDaily_Index.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\20_DataEntity\CDTTick.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\30_Indicator\CDataSetIndicators.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\30_Indicator\CIndicator.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\30_Indicator\CIndicator_SMA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\50_Strategy\CStrategy.vb" />
+    <Compile Include="ClassLibrary\50_Strategy\CStrategy_SMA2Crossover.vb" />
+    <Compile Include="ClassLibrary\50_Strategy\CStrategy_Grid.vb" />
+    <Compile Include="ClassLibrary\50_Strategy\CStrategy_TestResult.vb" />
+    <Compile Include="ClassLibrary\80_Transaction\CCash.vb" />
+    <Compile Include="ClassLibrary\80_Transaction\COrder.vb" />
+    <Compile Include="ClassLibrary\80_Transaction\CTransaction_Simulation_Wind.vb" />
+    <Compile Include="ClassLibrary\80_Transaction\CPerformance.vb" />
+    <Compile Include="ClassLibrary\80_Transaction\CSystemTR.vb" />
+    <Compile Include="ClassLibrary\80_Transaction\COrder_Obsolete.vb" />
+    <Compile Include="ClassLibrary\80_Transaction\COrderSet_Obsolete.vb" />
+    <Compile Include="ClassLibrary\80_Transaction\CTransaction.vb" />
+    <Compile Include="ClassLibrary\80_Transaction\CTransaction_Backtesting.vb" />
+    <Compile Include="ClassLibrary\80_Transaction\CTransaction_Real.vb" />
+    <Compile Include="ClassLibrary\80_Transaction\CTransaction_Simulation.vb" />
+    <Compile Include="Form\DataMaintenance\frmDataMaintenanceSQL.Designer.vb">
+      <DependentUpon>frmDataMaintenanceSQL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DataMaintenance\frmDataMaintenanceSQL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DataMaintenance\frmDataRealTime.Designer.vb">
+      <DependentUpon>frmDataRealTime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DataMaintenance\frmDataRealTime.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DataView\frmDataView_State.vb" />
+    <Compile Include="Form\DataView\frmDataView_StockHistoryData_Obsolete_OldTeeChart.Designer.vb">
+      <DependentUpon>frmDataView_StockHistoryData_Obsolete_OldTeeChart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DataView\frmDataView_StockHistoryData_Obsolete_OldTeeChart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DataView\frmDataView_HistoryData.Designer.vb">
+      <DependentUpon>frmDataView_HistoryData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DataView\frmDataView_HistoryData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Indicator\frm_IndicatorSetup.Designer.vb">
+      <DependentUpon>frm_IndicatorSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Indicator\frm_IndicatorSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Indicator\frm_IndicatorSetup_MACD.Designer.vb">
+      <DependentUpon>frm_IndicatorSetup_MACD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Indicator\frm_IndicatorSetup_MACD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Indicator\frm_IndicatorSetup_SMA.Designer.vb">
+      <DependentUpon>frm_IndicatorSetup_SMA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Indicator\frm_IndicatorSetup_SMA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Indicator\frm_StrategySMA2_Setup.Designer.vb">
+      <DependentUpon>frm_StrategySMA2_Setup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Indicator\frm_StrategySMA2_Setup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\TestSystem\frmBackTestSystem.Designer.vb">
+      <DependentUpon>frmBackTestSystem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\TestSystem\frmBackTestSystem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Trade\frmTrade_WindSimulation.Designer.vb">
+      <DependentUpon>frmTrade_WindSimulation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Trade\frmTrade_WindSimulation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Z_OBSOLETE\CDataInfo_Index.vb" />
+    <Compile Include="Z_OBSOLETE\CDataInfo_Stock.vb" />
+    <Compile Include="ClassLibrary\80_Transaction\CDataOrder.vb" />
+    <Compile Include="Z_OBSOLETE\CDataPriceBASE.vb" />
+    <Compile Include="Z_OBSOLETE\CDataPrice_Block.vb" />
+    <Compile Include="Z_OBSOLETE\CDataPrice_Fund.vb" />
+    <Compile Include="Z_OBSOLETE\CDataPrice_Index.vb" />
+    <Compile Include="ClassLibrary\20_DataEntity\CDTInfo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\20_DataEntity\CDTInfo_Fund.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\20_DataEntity\CDTInfo_Index.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\20_DataEntity\CDTInfo_Stock.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\20_DataEntity\CDataTableOrder.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataBase\CDBAccess.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataBase\CDBSQLManipulate_Obsolete.vb" />
+    <Compile Include="ClassLibrary\10_DataFeedBaseExport\DataBase\CDBTxt.vb" />
+    <Compile Include="Z_OBSOLETE\CDataPrice_Stock.vb" />
+    <Compile Include="ClassLibrary\20_DataEntity\CDTDaily.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\20_DataEntity\CDTDaily_Stock.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\20_DataEntity\CDataTablePrice_Stock_Collection.vb" />
+    <Compile Include="ClassLibrary\30_Indicator\CIDCBASE_Obsolete.vb" />
+    <Compile Include="ClassLibrary\30_Indicator\CIndicator_MACD.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\60_MoneyManagement\CStrategyPosition.vb" />
+    <Compile Include="ClassLibrary\CStatistic.vb" />
+    <Compile Include="Form\DataMaintenance\frmDataInsertSQL.Designer.vb">
+      <DependentUpon>frmDataInsertSQL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DataMaintenance\frmDataInsertSQL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\TestSystem\frm_TSAverage.Designer.vb">
+      <DependentUpon>frm_TSAverage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\TestSystem\frm_TSAverage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TradingSystemDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TradingSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ClassLibrary\CUtility.vb" />
+    <Compile Include="DataClasses1.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\TestSystem\frm_TSGrid.Designer.vb">
+      <DependentUpon>frm_TSGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\TestSystem\frm_TSGrid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Indicator\frm_IDCMA.Designer.vb">
+      <DependentUpon>frm_IDCMA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Indicator\frm_IDCMA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StringResource1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StringResource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Z_OBSOLETE\CRegExp.vb" />
+    <Compile Include="Z_OBSOLETE\CIDC_Average_Obsolete.vb" />
+    <Compile Include="ClassLibrary\GlobalVariables.vb" />
+    <Compile Include="Form\DataMaintenance\frm_DataFeed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DataMaintenance\frm_DataFeed.Designer.vb">
+      <DependentUpon>frm_DataFeed.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TestModule\DataFeed_Test.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ClassLibrary\20_DataEntity\CDTDaily.resx">
+      <DependentUpon>CDTDaily.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DataMaintenance\frmDataInsertSQL.resx">
+      <DependentUpon>frmDataInsertSQL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DataMaintenance\frmDataMaintenanceSQL.resx">
+      <DependentUpon>frmDataMaintenanceSQL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DataMaintenance\frmDataRealTime.resx">
+      <DependentUpon>frmDataRealTime.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DataView\frmDataView_StockHistoryData_Obsolete_OldTeeChart.resx">
+      <DependentUpon>frmDataView_StockHistoryData_Obsolete_OldTeeChart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DataView\frmDataView_HistoryData.resx">
+      <DependentUpon>frmDataView_HistoryData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Indicator\frm_IndicatorSetup.resx">
+      <DependentUpon>frm_IndicatorSetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Indicator\frm_IndicatorSetup_MACD.resx">
+      <DependentUpon>frm_IndicatorSetup_MACD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Indicator\frm_IndicatorSetup_SMA.resx">
+      <DependentUpon>frm_IndicatorSetup_SMA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Indicator\frm_StrategySMA2_Setup.resx">
+      <DependentUpon>frm_StrategySMA2_Setup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TestSystem\frmBackTestSystem.resx">
+      <DependentUpon>frmBackTestSystem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Trade\frmTrade_WindSimulation.resx">
+      <DependentUpon>frmTrade_WindSimulation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TestSystem\frm_TSAverage.resx">
+      <DependentUpon>frm_TSAverage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SequenceDiagram\frmDataImportSQL_btnDataFeed_Click.sequencediagram.layout">
+      <DependentUpon>frmDataImportSQL_btnDataFeed_Click.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringResource1.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringResource1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app1.config" />
+    <None Include="ClassDiagram\ClassDiagram_DataFeed.cd" />
+    <None Include="ClassDiagram\ClassDiagram_Indicator.cd" />
+    <None Include="ClassDiagram\ClassDiagram_Database.cd" />
+    <None Include="ClassDiagram\ClassDiagram_EntityDomain.cd" />
+    <None Include="ClassDiagram\ClassDiagram_Strategy.cd" />
+    <None Include="ClassDiagram\ClassDiagram_Trade.cd" />
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Form\DataMaintenance\frm_DataFeed.resx">
+      <DependentUpon>frm_DataFeed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TestSystem\frm_TSGrid.resx">
+      <DependentUpon>frm_TSGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Indicator\frm_IDCMA.resx">
+      <DependentUpon>frm_IDCMA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="SequenceDiagram\frmDataImportSQL_btnDataFeed_Click.sequencediagram" />
+    <None Include="设计文件\A08_交易系统.xmind" />
+    <None Include="设计文件\TradingSystem_SRS_SDS.docx" />
+    <None Include="设计文件\主要算法流程图.vsdx" />
+    <None Include="设计文件\我的投资.mpp" />
+    <None Include="My Project\app.manifest" />
+    <None Include="设计文件\交易系统架构.vsdx" />
+    <None Include="TradingSystemDataSet.xsc">
+      <DependentUpon>TradingSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TradingSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TradingSystemDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TradingSystemDataSet.xss">
+      <DependentUpon>TradingSystemDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSXML2">
+      <Guid>{F5078F18-C551-11D3-89B9-0000F81FE221}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ORChart">
+      <Guid>{7CEEA862-D59E-11D3-8394-00C04F7BDF10}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Buy.ico" />
+    <Content Include="ClassLibrary\10_DataFeedBaseExport\DataBase\CDBSQLBase.cs" />
+    <Content Include="Resources\Sell.ico" />
+    <Content Include="设计文件\参考资料\Uqer实例_01.txt" />
+    <Content Include="设计文件\参考资料\UQER帮助文件1.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ClassLibrary\61_RiskAnalysis\" />
+    <Folder Include="ClassLibrary\94_GraphTrading\" />
+    <Folder Include="ClassLibrary\QuantAnalysis\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DatayesInterface2Managed\DatayesInterface2Managed.vcxproj">
+      <Project>{6493d826-57f2-4151-b2be-ed8becb3e1ed}</Project>
+      <Name>DatayesInterface2Managed</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ta-lib\dotnet\src\Core\TA-Lib-Core.vcxproj">
+      <Project>{667af01a-5614-4446-9dcc-744d27906e5b}</Project>
+      <Name>TA-Lib-Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindAPIWrapper\WAPIWrapperCSharp.csproj">
+      <Project>{76144719-c290-4f1d-8b4a-8f133ec8c927}</Project>
+      <Name>WAPIWrapperCSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
